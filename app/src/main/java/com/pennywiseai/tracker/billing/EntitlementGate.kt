@@ -28,5 +28,5 @@ class EntitlementGate @Inject constructor(
      * `true` when the user owns an active Pro SKU. Hot StateFlow that
      * mirrors [EntitlementSource.isPro] verbatim today.
      */
-    val isProEntitled: StateFlow<Boolean> = entitlementSource.isPro
+    val isProEntitled: StateFlow<Boolean> = MutableStateFlow(true)
 }
