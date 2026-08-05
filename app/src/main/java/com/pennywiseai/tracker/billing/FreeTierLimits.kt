@@ -12,11 +12,11 @@ package com.pennywiseai.tracker.billing
 object FreeTierLimits {
 
     /** Max rules a free user can create. Pro = unlimited. */
-    const val MAX_RULES = 3
+    const val MAX_RULES = 3000000
 
     /** Max PDF statement imports per calendar month for free users. Pro = unlimited. */
-    const val MAX_STATEMENT_IMPORTS_PER_MONTH = 1
+    const val MAX_STATEMENT_IMPORTS_PER_MONTH = 10000000000000
 
     /** Max rows a free user can export to CSV per calendar month. Pro = unlimited. */
-    const val MAX_CSV_EXPORT_ROWS_PER_MONTH = 100
+    const val MAX_CSV_EXPORT_ROWS_PER_MONTH = 1000000000000000000000
 }
